@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem;
+  background-color: rgb(30,
+    40,
+    53);
+  overflow-x: hidden;
+}
+.icon-tool{
+  content: url(assets/images/tools.svg);
+  width: 1em;
+  height: 1em;
+}
+.icon-history{
+  content: url(assets/images/about.svg);
+  width: 1em;
+  height: 1em;
+}
+.icon-contact{
+  content: url(assets/images/contact.svg);
+  width: 1em;
+  height: 1em;
+}
+
+
+.my-picture{
+  content: url(assets/images/yo.svg);
+  -webkit-backdrop-filter: invert(80%);
+  backdrop-filter: invert(80%);
+  box-shadow: 10px 10px 10px rgba(0,0,0);
+  background: linear-gradient(to right, rgb(234, 159, 234), skyblue);
+}
+
+.html{
+  content: url(assets/images/html-new.svg);
+}
+.node{
+  content: url(assets/images/node.svg);
+}
+.css{
+  content: url(assets/images/css.svg);
+}
+.react{
+  content: url(assets/images/react.svg);
+}
+.javascript{
+  content: url(assets/images/javascript.svg);
+}
+.tailwind{
+  content: url(assets/images/tailwind.svg);
+}
+.mongo {
+  content: url(assets/images/mongo.svg);
+}
+.itm{
+  content: url(assets/images/itm.svg);
+  filter: drop-shadow(0 0 30px black);
+}
+.colegio{
+  content: url(assets/images/colegio.svg);
+}
+
+
+.contacto input, textarea{
+  background-color: rgb(58, 67, 76);
+  color: white;
+  font-weight: bold;
+}
+
+.contacto input:focus{
+ animation: inputAnimate 2s cubic-bezier(0.4, 0, 0.6, 1) infinite ;
+}
+
+.contacto button{
+
+}
+.contacto button:hover{
+  filter: drop-shadow(0 0 10px skyblue);
+}
+#nameErr{
+  display: none;
+}
+#emailErr{
+  display: none;
+}
+#messageErr{
+  display: none;
+}
+
+.my-name{
+  overflow: hidden;
+  z-index: 1;
+}
+
+.gitHub:hover, .linkedIn:hover{
+  transform: scale(1.1);
+}
+.linkedIn:hover{
+  filter: drop-shadow(0 0 6px skyblue);
+}
+.gitHub:hover{
+  filter: drop-shadow(0 0 6px fuchsia);
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #707070;
+  border-radius: 5px;
+}
